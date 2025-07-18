@@ -25,21 +25,6 @@ If it still doesn't work, try replacing `0x20000408` with `0x4`. Note that this 
 
 If you're using **Unity** and the tray icon doesn't appear correctly, run `sudo apt-get install libappindicator-dev`. Then reinstall ckb.
 
-#### OS X
-
-- **“ckb.pkg” can’t be opened because it is from an unidentified developer.**
-- Open `System Preferences > Security & Privacy > General` and click `Open Anyway`.
-- **Modifier keys (Shift, Ctrl, etc.) are not rebound correctly.**
-- ckb does not recognize modifier keys rebound from System Preferences. You can rebind them again within the application.
-- **`~` key prints `§±`**
-- Check your keyboard layout on ckb's Settings screen. Choose the layout that matches your physical keyboard.
-- **Compile problems** can usually be resolved by rebooting your computer and/or reinstalling Qt. Make sure that Xcode works on its own. If a compile fails, delete the `ckb-master` directory as well as any automatically generated `build-ckb` folders and try again from a new download.
-
-#### General
-
-**Please ensure your keyboard firmware is up to date. If you've just bought the keyboard, connect it to a Windows computer first and update the firmware from Corsair's official utility.**
-
-**Before reporting an issue, connect your keyboard to a Windows computer and see if the problem still occurs. If it does, contact Corsair.** Additionally, please check the Corsair user forums to see if your issue has been reported by other users. If so, try their solutions first.
 
 Common issues:
 - **Problem:** ckb says "No devices connected" or "Driver inactive"
@@ -62,7 +47,3 @@ Known issues
 - When starting the driver manually, the Terminal window sometimes gets spammed with enter keys. You can stop it by unplugging and replugging the keyboard or by moving the poll rate switch.
 - When stopping the driver manually, the keyboard sometimes stops working completely. You can reconnect it by moving the poll rate switch.
 
-Contributing
-------------
-
-You can contribute to the project by [opening a pull request](https://github.com/ccMSC/ckb/pulls). It's best if you base your changes off of the `testing` branch as opposed to the `master`, because the pull request will be merged there first. If you'd like to contribute but don't know what you can do, take a look at [the issue tracker](https://github.com/ccMSC/ckb/issues) and see if any features/problems are still unresolved. Feel free to ask if you'd like some ideas.
